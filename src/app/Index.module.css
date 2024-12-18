@@ -1,0 +1,32 @@
+div#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+.buttonShade {
+    color: #0000EE; /* By default, don't show visited links */
+    background-color: #EEA463;
+}
+.buttonShade:hover {
+    background-color: #CC7744;
+}
+.buttonShade:active {
+    color: #EE0000; /* But, show as red when interacted with */
+    background-color: #AA5522;
+}
+
+.buttonText {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+div#centralImage {
+    width: 500px;
+    color: red;
+}

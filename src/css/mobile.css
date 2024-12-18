@@ -1,0 +1,29 @@
+/* Section styling */
+body {
+    background-color: #FFDD99;
+}
+
+div.section {
+    /* Border */
+    border: 5px solid black;
+    margin: 5px;
+    padding: 10px;
+
+    /* Colour */
+    background-color: #FFCC66;
+
+    /* Prevent floating footer elements from escaping */
+    overflow: hidden;
+}
+
+div.thinBorder {
+    border: 5px solid black;
+    margin: 5px;
+    padding: 5px
+}
+
+/* Key elements */
+h1#title {
+    text-align: center;
+    font-size: 2em;
+}

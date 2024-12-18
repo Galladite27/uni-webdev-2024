@@ -1,0 +1,41 @@
+/* By default, use mobile first and hide any desktop-only elements */
+@import "@/css/mobile.css";
+.mobileOnly { display: block; }
+.desktopOnly { display: none; }
+
+/* However, if the screen is big enough, use desktop CSS and instead hide mobile-only elements */
+@media only screen and (min-width: 600px)  { 
+
+    .desktopOnly { display: block; }
+    .mobileOnly { display: none; }
+
+    /* Key elements */
+    h1#title {
+        /* Title was shrunk in mobile view to prevent overflow on thin phones */
+        font-size: 3em;
+    }
+
+    /* Footer alignment */
+    /*
+     * In desktop view, float elements left and right. This looks silly in mobile view where there
+     * isn't enough room for them both side-by-side.
+     */
+    p#footer-left {
+        display: inline;
+        float: left;
+    }
+    
+    p#footer-right {
+        display: inline;
+        float: right;
+    }
+
+    /*
+     * Text has additional padding above and beneath it from the line
+     * height. When I give an amount of padding, I want that much to be
+     * used - no more.
+     */
+    div.reduce-padding {
+        line-height: 0;
+    }
+}

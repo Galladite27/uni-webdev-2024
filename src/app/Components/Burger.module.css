@@ -1,0 +1,20 @@
+#hidden {
+    display: none;
+}
+
+#block {
+    display: block;
+}
+
+.buttonShade {
+    color: #0000EE; /* By default, don't show visited links */
+    background-color: #EE9955;
+    text-align: center; /* Also use this to handily centre text */
+}
+.buttonShade:hover {
+    background-color: #CC7744;
+}
+.buttonShade:active {
+    color: #EE0000; /* But, show as red when interacted with */
+    background-color: #AA5522;
+}
